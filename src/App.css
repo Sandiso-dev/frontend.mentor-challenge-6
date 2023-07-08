@@ -1,0 +1,158 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    transition: 1.6s all ease-in-out;
+    background: url(./assets/images/bg-header-desktop.svg) no-repeat;
+    object-fit: contain;
+    background-color: hsl(180, 14%, 20%);
+}
+
+.app{
+    width: 100%;
+    height: 100vh;
+    background-color:  hsl(180, 45%, 86%);
+    margin-top: 90px;
+}
+.filter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filter > button{
+    background-color: transparent;
+    border: 1px solid hsl(180, 14%, 20%);
+    margin: 5px;
+    padding: 6px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.5s all ease-in-out;
+}
+
+.filter > button:hover{
+    cursor: pointer;
+    background: hsl(180, 14%, 20%);
+    color: white;
+    border-color:hsl(180, 28%, 61%) ;
+}
+
+@media screen and (max-width: 580px){
+    body{
+        background: url(./assets/images/bg-header-mobile.svg);
+        background-color:  hsl(180, 45%, 86%);
+        
+    }
+    .filter{
+        display: grid;
+        position: relative;
+        top: -80px;
+    }
+}
+
+/* JOBS STYLING */
+
+.jobs{
+    width: 100%;
+    margin-left: 50px;
+    
+}
+
+.jobs > .job {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 70px 450px 1fr ;
+    padding: 12px;
+    border-left: 4px solid  hsl(180, 14%, 20%);
+    border-radius: 4px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    box-shadow: 8px 11px rgba(128, 128, 128, 0.13);
+    background: white;
+}
+
+.jobs > .job > img{
+    width: 60px;
+    margin-right: 15px;
+}
+
+.job > .description > span:first-child{
+    font-weight: bold;
+    color:  hsl(180, 51%, 23%);
+}
+.job > .description > .second{
+    color: white;
+    background-color:  hsl(180, 51%, 23%);
+    padding: 3px 7px;
+    border-radius: 13px;
+}
+
+.job > .description > .third{
+    color: white;
+    background-color:  black;
+    padding: 3px 7px;
+    border-radius: 13px;
+}
+
+.description > hr {
+    display: none;
+}
+.description > h4{
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.description > p {
+    color: rgb(71, 70, 70);
+}
+
+
+.tools{
+    display: flex;
+    gap: 15px;
+    height: 30px;
+    margin-top: 10px;
+}
+
+.toolsTwo{
+    display: none;
+    opacity: 0;
+}
+
+.tools > span {
+    background: hsl(180, 45%, 86%) ;
+    padding: 7px 4px;
+    color:hsl(180, 56%, 17%) ;
+    font-size: bolder;
+}
+
+@media screen and (max-width: 680px){
+    .jobs{
+        margin-left: 10px;
+    }
+    .job{
+        display: grid;
+    }
+
+    .toolsTwo{
+        display: block;
+    }
+
+    .description > hr {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        height: 3px;
+        width: 300px;
+    }
+    .job > img{
+        margin-bottom: 8px;
+        width: 10px;
+    }
+
+    
+}
