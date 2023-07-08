@@ -1,19 +1,15 @@
 import './App.css'
-import Filter from './components/Filter'
 import Jobs from './components/Jobs'
 
 function App() {
 
   return (
     <div className='app'>
-      <Filter/>
       <Jobs/>
-
-
- {/*<div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div> */} 
+ <div class="attribution">
+    Challenge by <a style={{color:"hsl(180, 28%, 61%)"}} href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a style={{color:"hsl(180, 28%, 61%)"}} href="https://sandiso-njadu-portfolio.netlify.app">Sandiso njadu</a>.
+  </div>  
     </div>
   )
 }
